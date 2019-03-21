@@ -1,0 +1,17 @@
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\bin\Debug\Ejercicio10.exe.config
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\bin\Debug\Ejercicio10.exe
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\bin\Debug\Ejercicio10.pdb
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\bin\Debug\Ejercicio10.xml
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.vbprojAssemblyReference.cache
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.Form1.resources
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.Resources.resources
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.vbproj.GenerateResource.cache
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.vbproj.CoreCompileInputs.cache
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.exe
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.xml
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.pdb
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.AltaDVD.resources
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.ConsultaDVD.resources
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.Alquiler.resources
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.Devolucion.resources
+C:\Users\Bruker\Desktop\ProyectosVisual\Ejercicio10\Ejercicio10\obj\Debug\Ejercicio10.listado.resources

@@ -1,0 +1,12 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\bin\Debug\TablaMultiplicacion.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\bin\Debug\TablaMultiplicacion.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\bin\Debug\TablaMultiplicacion.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\bin\Debug\TablaMultiplicacion.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\TablaMultiplicacion\TablaMultiplicacion\obj\Debug\TablaMultiplicacion.pdb

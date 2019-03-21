@@ -1,0 +1,13 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\bin\Debug\REPASO_compra_interactiva.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\bin\Debug\REPASO_compra_interactiva.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\bin\Debug\REPASO_compra_interactiva.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\bin\Debug\REPASO_compra_interactiva.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\REPASO_compra_interactiva\REPASO_compra_interactiva\obj\Debug\REPASO_compra_interactiva.Presupuesto.resources

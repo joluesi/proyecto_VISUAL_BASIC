@@ -1,0 +1,12 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\bin\Debug\Restaurante.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Restaurante\Restaurante\obj\Debug\Restaurante.pdb

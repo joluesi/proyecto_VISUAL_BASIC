@@ -1,0 +1,12 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\bin\Debug\SalarioNeto.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\bin\Debug\SalarioNeto.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\bin\Debug\SalarioNeto.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\bin\Debug\SalarioNeto.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\SalarioNeto\SalarioNeto\obj\Debug\SalarioNeto.pdb

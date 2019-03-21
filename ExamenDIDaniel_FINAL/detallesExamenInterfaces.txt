@@ -1,0 +1,9 @@
+
+formConsultaProductosCliente --> linea 32
+En AltaPedidos --> linea 106, en el else, me ha faltado
+	poner la coleccion a cero
+
+En AltaPedidos, cuando damos sobre Aceptar, me ha faltado
+	comprobar que el codigo del pedido NO exista en la coleccion
+
+Form1, linea 156, tenia que quitar el else

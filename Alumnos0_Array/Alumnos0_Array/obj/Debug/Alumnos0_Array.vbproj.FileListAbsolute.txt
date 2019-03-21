@@ -1,0 +1,6 @@
+C:\Users\LINUX INSIDE\source\repos\Alumnos0_Array\Alumnos0_Array\obj\Debug\Alumnos0_Array.vbprojAssemblyReference.cache
+C:\Users\LINUX INSIDE\source\repos\Alumnos0_Array\Alumnos0_Array\obj\Debug\Alumnos0_Array.Form1.resources
+C:\Users\LINUX INSIDE\source\repos\Alumnos0_Array\Alumnos0_Array\obj\Debug\Alumnos0_Array.Form2.resources
+C:\Users\LINUX INSIDE\source\repos\Alumnos0_Array\Alumnos0_Array\obj\Debug\Alumnos0_Array.Resources.resources
+C:\Users\LINUX INSIDE\source\repos\Alumnos0_Array\Alumnos0_Array\obj\Debug\Alumnos0_Array.vbproj.GenerateResource.cache
+C:\Users\LINUX INSIDE\source\repos\Alumnos0_Array\Alumnos0_Array\obj\Debug\Alumnos0_Array.vbproj.CoreCompileInputs.cache

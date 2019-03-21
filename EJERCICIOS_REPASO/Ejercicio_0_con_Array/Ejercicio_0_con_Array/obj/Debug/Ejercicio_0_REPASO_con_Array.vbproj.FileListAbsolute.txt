@@ -1,0 +1,13 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\bin\Debug\Ejercicio_0_con_Array.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\bin\Debug\Ejercicio_0_con_Array.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\bin\Debug\Ejercicio_0_con_Array.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\bin\Debug\Ejercicio_0_con_Array.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_REPASO_con_Array.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_con_Array.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_con_Array.Form2.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_con_Array.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_REPASO_con_Array.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_REPASO_con_Array.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_con_Array.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_con_Array.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Ejercicio_0_con_Array\Ejercicio_0_con_Array\obj\Debug\Ejercicio_0_con_Array.pdb

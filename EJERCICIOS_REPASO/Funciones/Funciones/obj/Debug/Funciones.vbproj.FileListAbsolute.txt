@@ -1,0 +1,12 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\bin\Debug\Funciones.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\bin\Debug\Funciones.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\bin\Debug\Funciones.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\bin\Debug\Funciones.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Funciones\Funciones\obj\Debug\Funciones.pdb

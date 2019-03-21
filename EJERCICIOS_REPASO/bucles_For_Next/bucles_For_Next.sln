@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bucles_For_Next", "bucles_For_Next\bucles_For_Next.vbproj", "{99F2DA5C-D697-4A5A-9FB0-235C179F365B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99F2DA5C-D697-4A5A-9FB0-235C179F365B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F2DA5C-D697-4A5A-9FB0-235C179F365B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F2DA5C-D697-4A5A-9FB0-235C179F365B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F2DA5C-D697-4A5A-9FB0-235C179F365B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA4D4936-8403-410A-9220-FCDF8BB996A5}
+	EndGlobalSection
+EndGlobal

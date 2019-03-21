@@ -1,0 +1,12 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\bin\Debug\Cifras_Divisores_NUMERO.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\bin\Debug\Cifras_Divisores_NUMERO.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\bin\Debug\Cifras_Divisores_NUMERO.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\bin\Debug\Cifras_Divisores_NUMERO.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.Form1.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\Cifras_Divisores_NUMERO\Cifras_Divisores_NUMERO\obj\Debug\Cifras_Divisores_NUMERO.pdb

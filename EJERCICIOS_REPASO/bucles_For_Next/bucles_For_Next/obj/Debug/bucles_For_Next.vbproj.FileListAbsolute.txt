@@ -1,0 +1,12 @@
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.vbprojAssemblyReference.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.Resources.resources
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.vbproj.GenerateResource.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.vbproj.CoreCompileInputs.cache
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\bin\Debug\bucles_For_Next.exe.config
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\bin\Debug\bucles_For_Next.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\bin\Debug\bucles_For_Next.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\bin\Debug\bucles_For_Next.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.exe
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.xml
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.pdb
+C:\Users\joseluis\source\repos\EJERCICIOS_REPASO\bucles_For_Next\bucles_For_Next\obj\Debug\bucles_For_Next.Form1.resources

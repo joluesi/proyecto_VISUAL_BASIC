@@ -1,0 +1,32 @@
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\bin\Debug\recuMarzo2019.exe.config
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.Form1.resources
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.Form3.resources
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.Resources.resources
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.vbproj.GenerateResource.Cache
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\bin\Debug\recuMarzo2019.exe
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\bin\Debug\recuMarzo2019.pdb
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\bin\Debug\recuMarzo2019.xml
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.exe
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.xml
+c:\users\alumno\documents\visual studio 2013\Projects\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.pdb
+C:\Users\alumno\Desktop\recuMarzo2019\recuMarzo2019\bin\Debug\recuMarzo2019.exe.config
+C:\Users\alumno\Desktop\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.exe
+C:\Users\alumno\Desktop\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.xml
+C:\Users\alumno\Desktop\recuMarzo2019\recuMarzo2019\obj\Debug\recuMarzo2019.pdb
+C:\Users\alumno\Desktop\recuMarzo2019alumno\recuMarzo2019\bin\Debug\recuMarzo2019.exe.config
+C:\Users\alumno\Desktop\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.exe
+C:\Users\alumno\Desktop\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.xml
+C:\Users\alumno\Desktop\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.pdb
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\bin\Debug\recuMarzo2019.exe.config
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\bin\Debug\recuMarzo2019.exe
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\bin\Debug\recuMarzo2019.pdb
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\bin\Debug\recuMarzo2019.xml
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.vbprojAssemblyReference.cache
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.Form1.resources
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.Form3.resources
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.Resources.resources
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.vbproj.GenerateResource.cache
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.vbproj.CoreCompileInputs.cache
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.exe
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.xml
+C:\Users\LINUX INSIDE\source\repos\recuMarzo2019_REPASO_JUNIO\recuMarzo2019alumno\recuMarzo2019\obj\Debug\recuMarzo2019.pdb
