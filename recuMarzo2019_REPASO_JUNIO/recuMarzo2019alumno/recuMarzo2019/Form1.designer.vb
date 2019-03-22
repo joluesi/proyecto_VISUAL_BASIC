@@ -36,7 +36,7 @@ Partial Class Form1
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.butSalirC = New System.Windows.Forms.Button()
-        Me.cobCodVendedor = New System.Windows.Forms.ComboBox()
+        Me.cmbCodVendedor = New System.Windows.Forms.ComboBox()
         Me.butGuardarC = New System.Windows.Forms.Button()
         Me.txtComprasMes = New System.Windows.Forms.TextBox()
         Me.txtCodCliente = New System.Windows.Forms.TextBox()
@@ -82,7 +82,7 @@ Partial Class Form1
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ClientesToolStripMenuItem.Text = "Alta"
         '
         'ConsultaToolStripMenuItem
@@ -120,19 +120,19 @@ Partial Class Form1
         'AltaToolStripMenuItem1
         '
         Me.AltaToolStripMenuItem1.Name = "AltaToolStripMenuItem1"
-        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(146, 22)
+        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.AltaToolStripMenuItem1.Text = "Alta"
         '
         'ComisiónToolStripMenuItem
         '
         Me.ComisiónToolStripMenuItem.Name = "ComisiónToolStripMenuItem"
-        Me.ComisiónToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ComisiónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ComisiónToolStripMenuItem.Text = "Comisión"
         '
         'VentaTotalToolStripMenuItem
         '
         Me.VentaTotalToolStripMenuItem.Name = "VentaTotalToolStripMenuItem"
-        Me.VentaTotalToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.VentaTotalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VentaTotalToolStripMenuItem.Text = "Ventas totales"
         '
         'AcercaDeToolStripMenuItem
@@ -144,7 +144,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.butSalirC)
-        Me.GroupBox1.Controls.Add(Me.cobCodVendedor)
+        Me.GroupBox1.Controls.Add(Me.cmbCodVendedor)
         Me.GroupBox1.Controls.Add(Me.butGuardarC)
         Me.GroupBox1.Controls.Add(Me.txtComprasMes)
         Me.GroupBox1.Controls.Add(Me.txtCodCliente)
@@ -168,14 +168,13 @@ Partial Class Form1
         Me.butSalirC.Text = "Salir"
         Me.butSalirC.UseVisualStyleBackColor = True
         '
-        'cobCodVendedor
+        'cmbCodVendedor
         '
-        Me.cobCodVendedor.FormattingEnabled = True
-        Me.cobCodVendedor.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
-        Me.cobCodVendedor.Location = New System.Drawing.Point(99, 45)
-        Me.cobCodVendedor.Name = "cobCodVendedor"
-        Me.cobCodVendedor.Size = New System.Drawing.Size(100, 21)
-        Me.cobCodVendedor.TabIndex = 10
+        Me.cmbCodVendedor.FormattingEnabled = True
+        Me.cmbCodVendedor.Location = New System.Drawing.Point(99, 45)
+        Me.cmbCodVendedor.Name = "cmbCodVendedor"
+        Me.cmbCodVendedor.Size = New System.Drawing.Size(100, 21)
+        Me.cmbCodVendedor.TabIndex = 10
         '
         'butGuardarC
         '
@@ -290,7 +289,6 @@ Partial Class Form1
         Me.txtCodVendedor.Name = "txtCodVendedor"
         Me.txtCodVendedor.Size = New System.Drawing.Size(100, 20)
         Me.txtCodVendedor.TabIndex = 4
-        Me.txtCodVendedor.Text = "1"
         '
         'Label7
         '
@@ -411,7 +409,7 @@ Partial Class Form1
     Friend WithEvents AltaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ComisiónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents VentaTotalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents cobCodVendedor As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbCodVendedor As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents txtComision As System.Windows.Forms.TextBox
     Friend WithEvents txtCodVendedor As System.Windows.Forms.TextBox

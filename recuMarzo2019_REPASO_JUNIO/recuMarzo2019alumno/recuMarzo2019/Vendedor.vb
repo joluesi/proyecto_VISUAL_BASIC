@@ -3,12 +3,16 @@
     Private zona As String
     Private comision As Single
 
+    'CONSTRUCTOR VACÍO
+    Public Sub New()
+
+    End Sub
+
     'CREAR CONSTRUCTOR CON ARGUMENTOS
     Public Sub New(codVend As String, zonaVend As String, comisionVend As Single)
         cod_vendedor = codVend
         zona = zonaVend
         comision = comisionVend
-
     End Sub
 
     Public Property Pcod_vendedor() As String

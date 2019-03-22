@@ -5,20 +5,26 @@
         'Alta Comprascliente        
         GroupBox1.Show()
 
-        txtCodCliente.Text = CStr(cont_cod_cliente)
-        'creamos combobox con los códigos de vendedor de la colección Vendedores
+        txtCodCliente.Text = cont_cod_cliente
+        cont_cod_cliente += 1
+
+        'creamos ComboBox con los códigos de vendedor de la colección Vendedores
         For i As Integer = 1 To colecVendedor.Count
-            cobCodVendedor.Items.Add(colecVendedor(i).Pcod_vendedor())
+            If Not cmbCodVendedor.Text.Equals(colecVendedor(i).Pcod_vendedor()) Then
+                cmbCodVendedor.Items.Add(colecVendedor(i).Pcod_vendedor())
+            End If
         Next
 
-        cont_cod_cliente += 1
 
         'otra opción para recorrer la colección Vendedores
         'For Each vend In colecVendedor
-        '    cobCodVendedor.Items.Add(vend.Pcod_vendedor())
+        '    cmbCodVendedor.Items.Add(vend.Pcod_vendedor())
         'Next
 
+
+
     End Sub
+
     'array ComprasMes
     Private Sub AltaArrayComprasMesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AltaArrayComprasMesToolStripMenuItem.Click
         comprasMes = {{1, 100}, {1, 200}, {2, 300}, {2, 1000}, {2, 500}}
@@ -28,7 +34,7 @@
     Private Sub AltaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AltaToolStripMenuItem1.Click
         'Alta Vendedor
         GroupBox2.Show()
-        txtCodVendedor.Text = cobCodVendedor.SelectedItem
+
 
     End Sub
 
@@ -62,24 +68,25 @@
     End Sub
 
     Private Sub butGuardarV_Click(sender As Object, e As EventArgs) Handles butGuardarV.Click
+
         Try
-            If IsNumeric(txtCodVendedor.Text) And CobZona.SelectedItem <> "" And IsNumeric(txtComision.Text) Then
+            If isNumeric(txtCodVendedor.Text) And CobZona.Text <> "" And isNumeric(txtComision.Text) Then
 
                 If colecVendedor.Count = 0 Then
+                    colecVendedor.Add(New Vendedor(txtCodVendedor.Text, CobZona.Text, txtComision.Text), txtCodVendedor.Text)
                     MsgBox("Vendedor dado de alta.")
-                    colecVendedor.Add(New Vendedor(txtCodVendedor.Text, CobZona.SelectedItem.Text, txtComision.Text), txtCodVendedor.Text)
-                    Si_o_No()
+                    Si_o_No_V()
 
                 Else
                     If colecVendedor.Contains(txtCodVendedor.Text) Then
                         MsgBox("Ya existe ese vendedor")
                         txtCodVendedor.Text = ""
-                        CobZona.SelectedItem = ""
+                        CobZona.Text = ""
                         txtComision.Text = ""
                     Else
+                        colecVendedor.Add(New Vendedor(txtCodVendedor.Text, CobZona.Text, txtComision.Text), txtCodVendedor.Text)
                         MsgBox("Vendedor dado de alta.")
-                        colecVendedor.Add(New Vendedor(txtCodVendedor.Text, CobZona.SelectedItem.Text, txtComision.Text), txtCodVendedor.Text)
-                        Si_o_No()
+                        Si_o_No_V()
 
                     End If
 
@@ -94,5 +101,41 @@
         End Try
     End Sub
 
+    Private Sub butGuardarC_Click(sender As Object, e As EventArgs) Handles butGuardarC.Click
 
+        Try
+            If cmbCodVendedor.Text <> "" Then
+
+                If colecComprasCliente.Count = 0 Then
+                    colecComprasCliente.Add(New Cliente(txtCodCliente.Text, cmbCodVendedor.Text), txtCodCliente.Text)
+                    MsgBox("Cliente dado de alta.")
+                    Si_o_No_C()
+
+                Else
+                    If colecComprasCliente.Contains(txtCodCliente.Text) Then
+                        MsgBox("Ya existe ese Cliente")
+                        txtCodCliente.Text = ""
+                        cmbCodVendedor.Text = ""
+
+                    Else
+                        colecComprasCliente.Add(New Cliente(txtCodCliente.Text, cmbCodVendedor.Text), txtCodCliente.Text)
+                        MsgBox("Cliente dado de alta.")
+                        Si_o_No_C()
+
+                    End If
+
+                End If
+
+            Else
+                MessageBox.Show("Ingrese datos correctos", "Registro de Altas de clientes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub butSalirC_Click(sender As Object, e As EventArgs) Handles butSalirC.Click
+        GroupBox1.Visible = False
+    End Sub
 End Class

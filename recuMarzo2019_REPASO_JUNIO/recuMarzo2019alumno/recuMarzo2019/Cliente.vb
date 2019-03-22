@@ -3,15 +3,16 @@
     Private cod_vendedorCli As String
     Private compras_mes As Single
 
+    'CONSTRUCTOR VACÍO
     Public Sub New()
 
     End Sub
 
     'CREAR CONSTRUCTOR CON ARGUMENTOS
-    Public Sub New(codcli As Integer, codvendcli As String, comprasMes As Single)
+    Public Sub New(codcli As Integer, codvendcli As String)
         cod_cliente = codcli
         cod_vendedorCli = codvendcli
-        compras_mes = comprasMes = 0
+        compras_mes = 0
     End Sub
 
     Public Property Pcodcliente() As Integer
@@ -40,4 +41,5 @@
             compras_mes = value
         End Set
     End Property
+
 End Class
