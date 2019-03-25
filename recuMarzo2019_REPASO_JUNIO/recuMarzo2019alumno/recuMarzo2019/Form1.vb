@@ -5,15 +5,15 @@
         'Alta Comprascliente        
         GroupBox1.Show()
 
-        txtCodCliente.Text = cont_cod_cliente
-        cont_cod_cliente += 1
-
         'creamos ComboBox con los códigos de vendedor de la colección Vendedores
         For i As Integer = 1 To colecVendedor.Count
-            If Not cmbCodVendedor.Text.Equals(colecVendedor(i).Pcod_vendedor()) Then
+            If Not (cmbCodVendedor.Items.Contains(txtCodVendedor.Text)) Then
                 cmbCodVendedor.Items.Add(colecVendedor(i).Pcod_vendedor())
             End If
         Next
+
+        txtCodCliente.Text = cont_cod_cliente
+        cont_cod_cliente += 1
 
 
         'otra opción para recorrer la colección Vendedores
