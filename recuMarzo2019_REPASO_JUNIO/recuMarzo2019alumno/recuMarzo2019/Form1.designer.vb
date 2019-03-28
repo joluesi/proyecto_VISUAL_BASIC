@@ -82,7 +82,7 @@ Partial Class Form1
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ClientesToolStripMenuItem.Text = "Alta"
         '
         'ConsultaToolStripMenuItem
@@ -120,19 +120,19 @@ Partial Class Form1
         'AltaToolStripMenuItem1
         '
         Me.AltaToolStripMenuItem1.Name = "AltaToolStripMenuItem1"
-        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.AltaToolStripMenuItem1.Text = "Alta"
         '
         'ComisiónToolStripMenuItem
         '
         Me.ComisiónToolStripMenuItem.Name = "ComisiónToolStripMenuItem"
-        Me.ComisiónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ComisiónToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ComisiónToolStripMenuItem.Text = "Comisión"
         '
         'VentaTotalToolStripMenuItem
         '
         Me.VentaTotalToolStripMenuItem.Name = "VentaTotalToolStripMenuItem"
-        Me.VentaTotalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.VentaTotalToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.VentaTotalToolStripMenuItem.Text = "Ventas totales"
         '
         'AcercaDeToolStripMenuItem
