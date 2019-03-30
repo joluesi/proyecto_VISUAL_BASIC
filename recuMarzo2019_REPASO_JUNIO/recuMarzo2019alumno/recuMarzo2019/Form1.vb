@@ -1,23 +1,20 @@
 ﻿Public Class Form1
 
-
     Private Sub ClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
         'Alta Comprascliente        
         GroupBox1.Show()
 
-        'creamos ComboBox con los códigos de vendedor de la colección Vendedores
-        For i As Integer = 1 To colecVendedor.Count
-            If Not (cmbCodVendedor.Items.Contains(txtCodVendedor.Text)) Then
-                cmbCodVendedor.Items.Add(colecVendedor(i).Pcod_vendedor())
-            End If
-        Next
+        SeleccionaCombobox(cmbCodVendedor)
 
         txtCodCliente.Text = cont_cod_cliente
         cont_cod_cliente += 1
 
-        'otra opción para recorrer la colección Vendedores
-        'For Each vend In colecVendedor
-        '    cmbCodVendedor.Items.Add(vend.Pcod_vendedor())
+        'otra opción para recorrer la colección Vendedores (SIN FUNCIÓN)
+        'creamos ComboBox con los códigos de vendedor de la colección Vendedores        
+        'For i As Integer = 1 To colecVendedor.Count
+        '    If Not (cmbCodVendedor.Items.Contains(txtCodVendedor.Text)) Then
+        '        cmbCodVendedor.Items.Add(colecVendedor(i).Pcod_vendedor())
+        '    End If
         'Next
 
     End Sub
@@ -31,7 +28,7 @@
     Private Sub AltaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AltaToolStripMenuItem1.Click
         'Alta Vendedor
         GroupBox2.Show()
-        cmbCodVendedor.Items.Clear()
+        'cmbCodVendedor.Items.Clear()
 
     End Sub
 
@@ -41,10 +38,10 @@
 
     Private Sub TratamientoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TratamientoToolStripMenuItem.Click
         'Actualizar campo compras_mes de colecComprasCliente con array ComprasMes
-        For i = 0 To comprasMes.GetLength(0) 'Array Bidimensional. con GetLength(0) le digo que sólo me coja una dimensión (las filas)
+        For i = 0 To comprasMes.GetLength(0) - 1  'Array Bidimensional. con GetLength(0) le digo que sólo me coja una dimensión (las filas)
             If colecComprasCliente.Contains(comprasMes(i, 0)) Then
                 Dim codCliente = comprasMes(i, 0)  'codCliente es una variable auxiliar prescindible
-                colecComprasCliente(codCliente).Pcodcliente() += comprasMes(i, 1)
+                colecComprasCliente(codCliente).Pcompras_mes() += comprasMes(i, 1)
             Else
                 MsgBox("No existe ese cliente")
             End If
@@ -54,8 +51,9 @@
 
     Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
         'Inicializar campo compras_mes de colecComprasCliente
-        For Each cliente In colecComprasCliente
-            colecComprasCliente(cliente).Pcompras_mes() = 0
+        For Each clien In colecComprasCliente
+            'colecComprasCliente(clien).Pcompras_mes() = 0
+            clien.Pcompras_mes() = 0
         Next
 
     End Sub
@@ -65,19 +63,37 @@
         'creamos ComboBox con los códigos de vendedor de la colección Vendedores
         grbComision.Visible = True
 
-        cmbVend.Items.Clear()
+        SeleccionaCombobox(cmbVend)
 
-        For i As Integer = 1 To colecVendedor.Count
-            If Not (cmbVend.Items.Contains(txtCodVendedor.Text)) Then
-                cmbVend.Items.Add(colecVendedor(i).Pcod_vendedor())
-            End If
-        Next
+        'cmbVend.Items.Clear()
 
+        'For i As Integer = 1 To colecVendedor.Count
+        '    If Not (cmbVend.Items.Contains(txtCodVendedor.Text)) Then
+        '        cmbVend.Items.Add(colecVendedor(i).Pcod_vendedor())
+        '    End If
+        'Next
 
     End Sub
 
     Private Sub VentaTotalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaTotalToolStripMenuItem.Click
         'ventas totales de cada uno de los vendedores, 1 por linea y en la última linea el total ventas de todos los vendedores
+        Form3.Visible = True
+
+        Dim totalVentasVendedor = 0
+        Dim totalVentasConjuntas = 0
+
+        For Each clien In colecComprasCliente
+            For Each vende In colecVendedor
+                If clien.PcodVendedorCli() = vende.Pcod_vendedor() Then
+                    totalVentasVendedor = 0
+                    totalVentasVendedor += clien.Pcompras_mes()
+                    Form3.rtbVentas.Text += "Vendedor " & vende.Pcod_vendedor() & ": Tiene un total ventas de: " & totalVentasVendedor & " €" & vbNewLine
+                    totalVentasConjuntas += totalVentasVendedor
+                End If
+            Next
+        Next
+
+        Form3.rtbVentas.Text += "Total ventas conjuntas: " & totalVentasConjuntas & " €"
 
     End Sub
 
@@ -159,12 +175,34 @@
 
     Private Sub butCalcular_Click(sender As Object, e As EventArgs) Handles butCalcular.Click
 
-        For Each cliente In colecComprasCliente
-            If cliente.PcodVendedorCli() =  
+        Dim totalVentas = 0
+        Dim comision = 0
+        Dim comisionesTotales = 0
 
+        For Each clien In colecComprasCliente
+            If clien.PcodVendedorCli() = cmbVend.Text Then
+                totalVentas += clien.Pcompras_mes()
+                For Each vende In colecVendedor
+                    If vende.Pcod_vendedor() = clien.PcodVendedorCli() Then
+                        comision = vende.Pcomision()
+                        comisionesTotales = (totalVentas * comision) / 100
+                    End If
+                Next
 
-
+            End If
         Next
+
+        MessageBox.Show("El Vendedor " & cmbVend.Text & " ha vendido por valor de: " & totalVentas & " €" & ", con comisión de: " & comision & "%, y total a cobrar por comisiones: " & comisionesTotales & " €")
+
+    End Sub
+
+    Private Sub butSalirComi_Click(sender As Object, e As EventArgs) Handles butSalirComi.Click
+        grbComision.Visible = False
+
+    End Sub
+
+    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
+        Me.Close()
 
     End Sub
 End Class

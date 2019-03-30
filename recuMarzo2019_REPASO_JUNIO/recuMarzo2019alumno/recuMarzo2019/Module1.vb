@@ -12,6 +12,19 @@
     Public cont_cod_cliente As Integer = 1
 
 
+    'Función para rellenar combobox de vendedores
+    Public Function SeleccionaCombobox(combo As ComboBox)
+
+        combo.Items.Clear()
+        For Each vend In colecVendedor
+            combo.Items.Add(vend.Pcod_vendedor())
+        Next
+
+        Return combo
+
+    End Function
+
+
     'Definir función para crear lista de vendedores
     Public Sub Si_o_No_V()
         Dim opcion As DialogResult
@@ -25,6 +38,7 @@
             Form1.Show()
         End If
     End Sub
+
 
     'Definir función para crear lista de clientes
     Public Sub Si_o_No_C()
@@ -40,6 +54,7 @@
         End If
     End Sub
 
+
     'Función comprobar campos numéricos
     Public Function isNumeric(text As String) As Boolean
         Try
@@ -49,7 +64,6 @@
             Return False
         End Try
     End Function
-
 
 
 End Module
