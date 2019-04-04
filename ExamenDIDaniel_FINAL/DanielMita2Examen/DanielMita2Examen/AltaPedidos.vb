@@ -17,6 +17,8 @@
                 colPedidos.Add(New Pedidos(txtCodPedido.Text, txtCodCliente.Text, txtFechaPedido.Text, txtDireccionPedido.Text), txtCodPedido.Text)
                 grbDetalles.Visible = True
 
+                txtCodDetalle.Text = txtCodPedido.Text
+
             Else 'NO existe cliente en array de clientes
 
                 MsgBox("No existe ese codigo del cliente")
@@ -151,4 +153,6 @@
     Private Sub comboCodProductoDetalle_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboCodProductoDetalle.SelectedIndexChanged
 
     End Sub
+
+
 End Class

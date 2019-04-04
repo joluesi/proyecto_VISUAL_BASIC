@@ -42,6 +42,8 @@ Partial Class AltaPedidos
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnAceptarAltaPedido = New System.Windows.Forms.Button()
         Me.btnVolverAltaPedido = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.grbDetalles.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,9 +59,9 @@ Partial Class AltaPedidos
         Me.grbDetalles.Controls.Add(Me.Label5)
         Me.grbDetalles.Controls.Add(Me.txtCodDetalle)
         Me.grbDetalles.Location = New System.Drawing.Point(301, 57)
-        Me.grbDetalles.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbDetalles.Margin = New System.Windows.Forms.Padding(2)
         Me.grbDetalles.Name = "grbDetalles"
-        Me.grbDetalles.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbDetalles.Padding = New System.Windows.Forms.Padding(2)
         Me.grbDetalles.Size = New System.Drawing.Size(229, 334)
         Me.grbDetalles.TabIndex = 0
         Me.grbDetalles.TabStop = False
@@ -68,7 +70,7 @@ Partial Class AltaPedidos
         'btnGuardarDetalles
         '
         Me.btnGuardarDetalles.Location = New System.Drawing.Point(19, 251)
-        Me.btnGuardarDetalles.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnGuardarDetalles.Margin = New System.Windows.Forms.Padding(2)
         Me.btnGuardarDetalles.Name = "btnGuardarDetalles"
         Me.btnGuardarDetalles.Size = New System.Drawing.Size(175, 28)
         Me.btnGuardarDetalles.TabIndex = 14
@@ -98,7 +100,7 @@ Partial Class AltaPedidos
         'txtDescuentoDetalles
         '
         Me.txtDescuentoDetalles.Location = New System.Drawing.Point(19, 206)
-        Me.txtDescuentoDetalles.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDescuentoDetalles.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDescuentoDetalles.Name = "txtDescuentoDetalles"
         Me.txtDescuentoDetalles.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.txtDescuentoDetalles.Size = New System.Drawing.Size(176, 20)
@@ -107,7 +109,7 @@ Partial Class AltaPedidos
         'txtCantidadProDetalles
         '
         Me.txtCantidadProDetalles.Location = New System.Drawing.Point(19, 151)
-        Me.txtCantidadProDetalles.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCantidadProDetalles.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCantidadProDetalles.Name = "txtCantidadProDetalles"
         Me.txtCantidadProDetalles.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.txtCantidadProDetalles.Size = New System.Drawing.Size(176, 20)
@@ -117,7 +119,7 @@ Partial Class AltaPedidos
         '
         Me.comboCodProductoDetalle.FormattingEnabled = True
         Me.comboCodProductoDetalle.Location = New System.Drawing.Point(19, 100)
-        Me.comboCodProductoDetalle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.comboCodProductoDetalle.Margin = New System.Windows.Forms.Padding(2)
         Me.comboCodProductoDetalle.Name = "comboCodProductoDetalle"
         Me.comboCodProductoDetalle.Size = New System.Drawing.Size(176, 21)
         Me.comboCodProductoDetalle.TabIndex = 9
@@ -146,7 +148,7 @@ Partial Class AltaPedidos
         '
         Me.txtCodDetalle.Enabled = False
         Me.txtCodDetalle.Location = New System.Drawing.Point(19, 52)
-        Me.txtCodDetalle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCodDetalle.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodDetalle.Name = "txtCodDetalle"
         Me.txtCodDetalle.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.txtCodDetalle.Size = New System.Drawing.Size(176, 20)
@@ -155,8 +157,8 @@ Partial Class AltaPedidos
         'txtCodPedido
         '
         Me.txtCodPedido.Enabled = False
-        Me.txtCodPedido.Location = New System.Drawing.Point(34, 57)
-        Me.txtCodPedido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCodPedido.Location = New System.Drawing.Point(36, 73)
+        Me.txtCodPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodPedido.Name = "txtCodPedido"
         Me.txtCodPedido.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.txtCodPedido.Size = New System.Drawing.Size(176, 20)
@@ -164,8 +166,8 @@ Partial Class AltaPedidos
         '
         'txtCodCliente
         '
-        Me.txtCodCliente.Location = New System.Drawing.Point(34, 109)
-        Me.txtCodCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCodCliente.Location = New System.Drawing.Point(36, 125)
+        Me.txtCodCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodCliente.Name = "txtCodCliente"
         Me.txtCodCliente.Size = New System.Drawing.Size(176, 20)
         Me.txtCodCliente.TabIndex = 2
@@ -173,8 +175,8 @@ Partial Class AltaPedidos
         'txtFechaPedido
         '
         Me.txtFechaPedido.Enabled = False
-        Me.txtFechaPedido.Location = New System.Drawing.Point(34, 157)
-        Me.txtFechaPedido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFechaPedido.Location = New System.Drawing.Point(36, 173)
+        Me.txtFechaPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFechaPedido.Name = "txtFechaPedido"
         Me.txtFechaPedido.Size = New System.Drawing.Size(176, 20)
         Me.txtFechaPedido.TabIndex = 3
@@ -182,8 +184,8 @@ Partial Class AltaPedidos
         'txtDireccionPedido
         '
         Me.txtDireccionPedido.Enabled = False
-        Me.txtDireccionPedido.Location = New System.Drawing.Point(34, 202)
-        Me.txtDireccionPedido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDireccionPedido.Location = New System.Drawing.Point(36, 218)
+        Me.txtDireccionPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccionPedido.Name = "txtDireccionPedido"
         Me.txtDireccionPedido.Size = New System.Drawing.Size(176, 20)
         Me.txtDireccionPedido.TabIndex = 4
@@ -191,7 +193,7 @@ Partial Class AltaPedidos
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(32, 41)
+        Me.Label1.Location = New System.Drawing.Point(34, 57)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(75, 13)
@@ -201,7 +203,7 @@ Partial Class AltaPedidos
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(32, 93)
+        Me.Label2.Location = New System.Drawing.Point(34, 109)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 13)
@@ -211,7 +213,7 @@ Partial Class AltaPedidos
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(34, 141)
+        Me.Label3.Location = New System.Drawing.Point(36, 157)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 13)
@@ -221,7 +223,7 @@ Partial Class AltaPedidos
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(34, 185)
+        Me.Label4.Location = New System.Drawing.Point(36, 201)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
@@ -230,8 +232,8 @@ Partial Class AltaPedidos
         '
         'btnAceptarAltaPedido
         '
-        Me.btnAceptarAltaPedido.Location = New System.Drawing.Point(34, 255)
-        Me.btnAceptarAltaPedido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAceptarAltaPedido.Location = New System.Drawing.Point(36, 271)
+        Me.btnAceptarAltaPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAceptarAltaPedido.Name = "btnAceptarAltaPedido"
         Me.btnAceptarAltaPedido.Size = New System.Drawing.Size(175, 40)
         Me.btnAceptarAltaPedido.TabIndex = 9
@@ -240,19 +242,39 @@ Partial Class AltaPedidos
         '
         'btnVolverAltaPedido
         '
-        Me.btnVolverAltaPedido.Location = New System.Drawing.Point(37, 317)
-        Me.btnVolverAltaPedido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVolverAltaPedido.Location = New System.Drawing.Point(39, 333)
+        Me.btnVolverAltaPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolverAltaPedido.Name = "btnVolverAltaPedido"
         Me.btnVolverAltaPedido.Size = New System.Drawing.Size(175, 40)
         Me.btnVolverAltaPedido.TabIndex = 10
         Me.btnVolverAltaPedido.Text = "Volver"
         Me.btnVolverAltaPedido.UseVisualStyleBackColor = True
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(317, 28)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(120, 13)
+        Me.Label9.TabIndex = 11
+        Me.Label9.Text = "DETALLE DE PEDIDO:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(37, 28)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(51, 13)
+        Me.Label10.TabIndex = 12
+        Me.Label10.Text = "PEDIDO:"
+        '
         'AltaPedidos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(566, 546)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.btnVolverAltaPedido)
         Me.Controls.Add(Me.btnAceptarAltaPedido)
         Me.Controls.Add(Me.Label4)
@@ -264,7 +286,7 @@ Partial Class AltaPedidos
         Me.Controls.Add(Me.txtCodCliente)
         Me.Controls.Add(Me.txtCodPedido)
         Me.Controls.Add(Me.grbDetalles)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "AltaPedidos"
         Me.Text = "AltaPedidos"
         Me.grbDetalles.ResumeLayout(False)
@@ -294,4 +316,6 @@ Partial Class AltaPedidos
     Friend WithEvents txtDescuentoDetalles As TextBox
     Friend WithEvents txtCantidadProDetalles As TextBox
     Friend WithEvents btnGuardarDetalles As Button
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
 End Class
