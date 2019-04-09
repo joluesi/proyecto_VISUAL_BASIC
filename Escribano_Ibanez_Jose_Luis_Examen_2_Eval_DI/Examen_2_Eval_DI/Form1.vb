@@ -12,7 +12,7 @@
 
     Private Sub ALTACLIENTESToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ALTACLIENTESToolStripMenuItem.Click
 
-        For i As Integer = 1 To 5
+        For i As Integer = 0 To 4
             arrayClientes(i) = i
         Next
 

@@ -15,7 +15,7 @@
     'array de detalle pedido
     Public arrayDetallePedido() As DETALLE_PEDIDO
     'array de clientes
-    Public arrayClientes() As Integer
+    Public arrayClientes(4) As Integer
     'para redimensionar array de pedidos
     Public cont As Integer = 0
 

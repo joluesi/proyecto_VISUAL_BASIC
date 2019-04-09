@@ -1,0 +1,57 @@
+Private Sub btnConsultar_Click(sender As Object, e As EventArgs) Handles btnConsultar.Click
+
+        If cmbMes.Text <> "" Then
+            For Each pedido In colecPEDIDOS
+                If pedido.P_fechaPedido().Month = cmbMes.Text Then
+                    For i = 0 To array_detalle.Length - 1
+                        If array_detalle(i).codPedido_detal = pedido.P_codPedido() Then
+                            For Each produc In colecPRODUCTOS
+                                If produc.P_CodProducto() = array_detalle(i).codProducto_detal Then
+                                    richtxtbConsulta.Text += "Nombre producto: " & produc.P_NomProducto() & vbNewLine
+                                    richtxtbConsulta.Text += "Cantidades: " & CStr(array_detalle(i).canti_detal) & vbNewLine
+                                End If
+
+                            Next
+
+                        End If
+                    Next
+
+                Else
+                    MsgBox("Este cliente no tiene pedidos en el mes seleccionado")
+                End If
+            Next
+
+
+
+        Else
+            MsgBox("Antes seleccione mes a consultar")
+
+        End If
+
+    End Sub
+
+
+Private Sub ProductosDeClienteMesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductosDeClienteMesToolStripMenuItem.Click
+
+        Dim opcion = InputBox("Introduce el codigo del cliente")
+
+        Dim encontrado As Boolean = False
+        For Each cliente In array_clientes
+            If cliente = opcion Then
+                encontrado = True
+            End If
+        Next
+
+        If encontrado Then
+            For Each pedido In colecPEDIDOS
+                If pedido.P_clientePedido() = opcion Then
+                    ConsultaProductosCliente.Show()
+                Else
+                    MsgBox("El cliente existe, pero no tiene pedidos")
+                End If
+            Next
+        Else
+            MsgBox("No existe ese cliente")
+        End If
+
+    End Sub
