@@ -16,7 +16,7 @@
     Public array_clientes(4) As Integer
 
 
-    'propiedades
+    'variables
     Public contadorCodPedido As Integer = 1
     Public cont As Integer = 0
 

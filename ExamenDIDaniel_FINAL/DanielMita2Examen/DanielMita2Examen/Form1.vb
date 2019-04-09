@@ -17,7 +17,7 @@
             array_clientes(i) = i
         Next
 
-        MsgBox("Creada colección de productos y array de clientes con éxito")
+        MsgBox("Creada colección de productos y array de clientes")
 
     End Sub
 
@@ -36,7 +36,8 @@
             AltaPedidos.comboCodProductoDetalle.Items.Add(colProductos(i).GSCodProducto())
         Next
 
-        AltaPedidos.txtCodDetalle.Text = AltaPedidos.txtCodPedido.Text
+        'lo pongo en formulario AltaPedidos
+        'AltaPedidos.txtCodDetalle.Text = AltaPedidos.txtCodPedido.Text
 
 
     End Sub

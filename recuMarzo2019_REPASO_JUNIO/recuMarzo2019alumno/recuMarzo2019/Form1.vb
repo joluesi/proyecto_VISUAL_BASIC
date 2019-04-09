@@ -179,20 +179,37 @@
         Dim comision = 0
         Dim comisionesTotales = 0
 
+        'For Each clien In colecComprasCliente
+        '    If clien.PcodVendedorCli() = cmbVend.Text Then
+        '        totalVentas += clien.Pcompras_mes()
+        '        For Each vende In colecVendedor
+        '            If vende.Pcod_vendedor() = clien.PcodVendedorCli() Then
+        '                comision = vende.Pcomision()
+        '                comisionesTotales = (totalVentas * comision) / 100
+        '            End If
+        '        Next
+
+        '    End If
+        'Next
+
+        'MessageBox.Show("El Vendedor " & cmbVend.Text & " ha vendido por valor de: " & totalVentas & " €" & ", con comisión de: " & comision & "%, y total a cobrar por comisiones: " & comisionesTotales & " €")
+
+        'otra opción (aprovechando que el codigo vendedor es la clave en colección vendedores)
+        Dim claveVendedorBusco As String
+        claveVendedorBusco = cmbVend.Text
         For Each clien In colecComprasCliente
-            If clien.PcodVendedorCli() = cmbVend.Text Then
+            If clien.PcodVendedorCli() = claveVendedorBusco Then
                 totalVentas += clien.Pcompras_mes()
-                For Each vende In colecVendedor
-                    If vende.Pcod_vendedor() = clien.PcodVendedorCli() Then
-                        comision = vende.Pcomision()
-                        comisionesTotales = (totalVentas * comision) / 100
-                    End If
-                Next
+                If colecVendedor.Contains(claveVendedorBusco) Then
+                    comision = colecVendedor(claveVendedorBusco).Pcomision()
+                    comisionesTotales = (totalVentas * comision) / 100
+                End If
 
             End If
         Next
 
         MessageBox.Show("El Vendedor " & cmbVend.Text & " ha vendido por valor de: " & totalVentas & " €" & ", con comisión de: " & comision & "%, y total a cobrar por comisiones: " & comisionesTotales & " €")
+
 
     End Sub
 
