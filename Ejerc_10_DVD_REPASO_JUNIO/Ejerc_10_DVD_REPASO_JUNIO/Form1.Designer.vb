@@ -55,13 +55,13 @@ Partial Class Form1
         'AltaDeDVDToolStripMenuItem
         '
         Me.AltaDeDVDToolStripMenuItem.Name = "AltaDeDVDToolStripMenuItem"
-        Me.AltaDeDVDToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaDeDVDToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.AltaDeDVDToolStripMenuItem.Text = "Alta de DVD"
         '
         'AltaDeCLIENTEToolStripMenuItem
         '
         Me.AltaDeCLIENTEToolStripMenuItem.Name = "AltaDeCLIENTEToolStripMenuItem"
-        Me.AltaDeCLIENTEToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaDeCLIENTEToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.AltaDeCLIENTEToolStripMenuItem.Text = "Alta de CLIENTE"
         '
         'AlquilarDVDToolStripMenuItem

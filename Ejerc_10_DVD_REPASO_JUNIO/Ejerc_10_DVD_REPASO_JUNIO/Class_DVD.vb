@@ -9,7 +9,7 @@
         codigoDvd = codigo
         tituloDvd = titulo
         diasAlquilerDvd = dias
-        alquiladoDvd = 0 'por defecto inicializo en '0'
+        alquiladoDvd = False  'por defecto inicializo en 'false'
 
     End Sub
 

@@ -14,6 +14,7 @@
 
     'array para DVDalquilado
     Public arrayDVD() As DVDalquilado
+    Public contador As Integer
 
 
     'función para pedir si añado o no añado más DVD

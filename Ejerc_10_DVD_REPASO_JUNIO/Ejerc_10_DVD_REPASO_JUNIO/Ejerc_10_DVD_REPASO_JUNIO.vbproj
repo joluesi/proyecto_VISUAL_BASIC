@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlquilarDVD.Designer.vb">
+      <DependentUpon>AlquilarDVD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlquilarDVD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AltaDVD.Designer.vb">
       <DependentUpon>AltaDVD.vb</DependentUpon>
     </Compile>
@@ -87,11 +93,23 @@
     <Compile Include="Consulta_DVD.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DevolverDVD.Designer.vb">
+      <DependentUpon>DevolverDVD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverDVD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listados.Designer.vb">
+      <DependentUpon>Listados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -112,14 +130,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AlquilarDVD.resx">
+      <DependentUpon>AlquilarDVD.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaDVD.resx">
       <DependentUpon>AltaDVD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consulta_DVD.resx">
       <DependentUpon>Consulta_DVD.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DevolverDVD.resx">
+      <DependentUpon>DevolverDVD.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listados.resx">
+      <DependentUpon>Listados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

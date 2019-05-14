@@ -23,7 +23,6 @@ Partial Class Consulta_DVD
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnCancelar = New System.Windows.Forms.Button()
-        Me.btnConsultar = New System.Windows.Forms.Button()
         Me.txtConsultaAlquilado = New System.Windows.Forms.TextBox()
         Me.txtConsultaDiasAlquiler = New System.Windows.Forms.TextBox()
         Me.txtConsultaTituloDVD = New System.Windows.Forms.TextBox()
@@ -37,22 +36,12 @@ Partial Class Consulta_DVD
         'btnCancelar
         '
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(276, 305)
+        Me.btnCancelar.Location = New System.Drawing.Point(64, 298)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(124, 32)
         Me.btnCancelar.TabIndex = 29
         Me.btnCancelar.Text = "Volver"
         Me.btnCancelar.UseVisualStyleBackColor = True
-        '
-        'btnConsultar
-        '
-        Me.btnConsultar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConsultar.Location = New System.Drawing.Point(86, 305)
-        Me.btnConsultar.Name = "btnConsultar"
-        Me.btnConsultar.Size = New System.Drawing.Size(124, 32)
-        Me.btnConsultar.TabIndex = 28
-        Me.btnConsultar.Text = "Consultar"
-        Me.btnConsultar.UseVisualStyleBackColor = True
         '
         'txtConsultaAlquilado
         '
@@ -128,7 +117,6 @@ Partial Class Consulta_DVD
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(546, 450)
         Me.Controls.Add(Me.btnCancelar)
-        Me.Controls.Add(Me.btnConsultar)
         Me.Controls.Add(Me.txtConsultaAlquilado)
         Me.Controls.Add(Me.txtConsultaDiasAlquiler)
         Me.Controls.Add(Me.txtConsultaTituloDVD)
@@ -145,7 +133,6 @@ Partial Class Consulta_DVD
     End Sub
 
     Friend WithEvents btnCancelar As Button
-    Friend WithEvents btnConsultar As Button
     Friend WithEvents txtConsultaAlquilado As TextBox
     Friend WithEvents txtConsultaDiasAlquiler As TextBox
     Friend WithEvents txtConsultaTituloDVD As TextBox
