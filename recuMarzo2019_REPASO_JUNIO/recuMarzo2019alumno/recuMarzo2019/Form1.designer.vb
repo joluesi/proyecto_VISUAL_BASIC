@@ -68,7 +68,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.ConsultaToolStripMenuItem, Me.FacturaToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(515, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(521, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -120,19 +120,19 @@ Partial Class Form1
         'AltaToolStripMenuItem1
         '
         Me.AltaToolStripMenuItem1.Name = "AltaToolStripMenuItem1"
-        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(146, 22)
+        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.AltaToolStripMenuItem1.Text = "Alta"
         '
         'ComisiónToolStripMenuItem
         '
         Me.ComisiónToolStripMenuItem.Name = "ComisiónToolStripMenuItem"
-        Me.ComisiónToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ComisiónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ComisiónToolStripMenuItem.Text = "Comisión"
         '
         'VentaTotalToolStripMenuItem
         '
         Me.VentaTotalToolStripMenuItem.Name = "VentaTotalToolStripMenuItem"
-        Me.VentaTotalToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.VentaTotalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VentaTotalToolStripMenuItem.Text = "Ventas totales"
         '
         'AcercaDeToolStripMenuItem
@@ -370,7 +370,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(515, 270)
+        Me.ClientSize = New System.Drawing.Size(521, 298)
         Me.Controls.Add(Me.grbComision)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

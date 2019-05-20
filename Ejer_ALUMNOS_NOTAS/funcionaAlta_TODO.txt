@@ -1,0 +1,60 @@
+Public Class AltaNotas
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+
+        If txtCodAlumno.Text <> "" Then
+            If coleccionALUMNOS.Contains(txtCodAlumno.Text) Then
+                gbx_codCurso.Visible = True
+                If coleccionALUMNOS(txtCodAlumno.Text).P_cod_ciclo = "DAM" Then
+                    If txtCodCurso.Text = "1DAM" Then
+                        modulos_ciclo(txtCodCurso.Text)
+                        Label1_mod.Text = arrayModulos.ElementAt(0)
+                        Label2_mod.Text = arrayModulos.ElementAt(1)
+                        Label3_mod.Text = arrayModulos.ElementAt(2)
+                        Label4_mod.Text = arrayModulos.ElementAt(3)
+                        gbx_modulos.Visible = True
+
+                    ElseIf txtCodCurso.Text = "2DAM" Then
+                        modulos_ciclo(txtCodCurso.Text)
+                        Label1_mod.Text = arrayModulos.ElementAt(0)
+                        Label2_mod.Text = arrayModulos.ElementAt(1)
+                        Label3_mod.Text = arrayModulos.ElementAt(2)
+                        Label4_mod.Text = arrayModulos.ElementAt(3)
+                        gbx_modulos.Visible = True
+
+                    Else
+                        MsgBox("Info. El Alumno es del ciclo DAM. Introduzca 1DAM o 2DAM")
+                    End If
+
+                ElseIf coleccionALUMNOS(txtCodAlumno.Text).P_cod_ciclo = "DAW" Then
+                    If txtCodCurso.Text = "1DAW" Then
+                        modulos_ciclo(txtCodCurso.Text)
+                        Label1_mod.Text = arrayModulos.ElementAt(0)
+                        Label2_mod.Text = arrayModulos.ElementAt(1)
+                        Label3_mod.Text = arrayModulos.ElementAt(2)
+                        Label4_mod.Text = arrayModulos.ElementAt(3)
+                        gbx_modulos.Visible = True
+
+                    ElseIf txtCodCurso.Text = "2DAW" Then
+                        modulos_ciclo(txtCodCurso.Text)
+                        Label1_mod.Text = arrayModulos.ElementAt(0)
+                        Label2_mod.Text = arrayModulos.ElementAt(1)
+                        Label3_mod.Text = arrayModulos.ElementAt(2)
+                        Label4_mod.Text = arrayModulos.ElementAt(3)
+                        gbx_modulos.Visible = True
+
+                    Else
+                        MsgBox("Info. El Alumno es del ciclo DAW. Introduzca 1DAW o 2DAW")
+                    End If
+
+                End If
+
+            Else
+                MsgBox("No existe ese Alumno")
+            End If
+
+        Else
+            MsgBox("Antes introduzca código de alumno")
+
+        End If
+
+    End Sub
