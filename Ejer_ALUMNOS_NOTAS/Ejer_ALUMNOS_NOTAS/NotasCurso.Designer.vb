@@ -50,7 +50,6 @@ Partial Class NotasCurso
         Me.btnImprimir.TabIndex = 70
         Me.btnImprimir.Text = "Imprimir"
         Me.btnImprimir.UseVisualStyleBackColor = True
-        Me.btnImprimir.Visible = False
         '
         'btnCancelar
         '
@@ -98,6 +97,7 @@ Partial Class NotasCurso
         Me.rtxtbox_NotasCurso.Size = New System.Drawing.Size(833, 435)
         Me.rtxtbox_NotasCurso.TabIndex = 73
         Me.rtxtbox_NotasCurso.Text = ""
+        Me.rtxtbox_NotasCurso.Visible = False
         '
         'NotasCurso
         '
