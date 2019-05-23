@@ -11,12 +11,12 @@
     Public cont As Integer = 0
 
     'función para cargar array de módulos
-    Public Function modulos_ciclo(texto As String) As String
-        If texto = "1DAM" Or texto = "1DAW" Then
+    Public Function modulos_ciclo(curso As String) As String
+        If curso = "1DAM" Or curso = "1DAW" Then
             arrayModulos = {"java", "bbdd", "entornos", "sistemas"}
-        ElseIf texto = "2DAM" Then
+        ElseIf curso = "2DAM" Then
             arrayModulos = {"python", "visualbasic", "xml", "procesos"}
-        ElseIf texto = "2DAW" Then
+        ElseIf curso = "2DAW" Then
             arrayModulos = {"prog.servidor", "prog.cliente", "javascript", "php"}
         Else
             MsgBox("Error.Introduzca 1DAM/1DAW/2DAM/2DAW")

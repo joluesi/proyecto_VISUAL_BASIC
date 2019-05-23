@@ -23,7 +23,6 @@ Partial Class NotasCurso
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnImprimir = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnSiguiente = New System.Windows.Forms.Button()
         Me.lbl_1 = New System.Windows.Forms.Label()
@@ -40,16 +39,6 @@ Partial Class NotasCurso
         Me.Label3.Size = New System.Drawing.Size(119, 20)
         Me.Label3.TabIndex = 36
         Me.Label3.Text = "Código curso:"
-        '
-        'btnImprimir
-        '
-        Me.btnImprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnImprimir.Location = New System.Drawing.Point(380, 586)
-        Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(132, 29)
-        Me.btnImprimir.TabIndex = 70
-        Me.btnImprimir.Text = "Imprimir"
-        Me.btnImprimir.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
@@ -107,7 +96,6 @@ Partial Class NotasCurso
         Me.Controls.Add(Me.rtxtbox_NotasCurso)
         Me.Controls.Add(Me.cmb_Curso)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.btnImprimir)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.lbl_1)
@@ -118,7 +106,6 @@ Partial Class NotasCurso
 
     End Sub
     Friend WithEvents Label3 As Label
-    Friend WithEvents btnImprimir As Button
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnSiguiente As Button
     Friend WithEvents lbl_1 As Label

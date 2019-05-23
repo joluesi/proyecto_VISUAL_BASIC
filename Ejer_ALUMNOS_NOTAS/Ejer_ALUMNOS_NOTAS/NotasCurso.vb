@@ -7,29 +7,25 @@
         Dim codCurso As String = cmb_Curso.SelectedItem
         rtxtbox_NotasCurso.Clear()
         rtxtbox_NotasCurso.Visible = True
-        If cmb_Curso.SelectedItem <> "" Then
-            If codCurso.Equals(codCurso) Then
-                For Each alumno In coleccionAluNotas
-                    If alumno.P_cod_curso.Equals(codCurso) Then
-                        encontrado = True
-                        rtxtbox_NotasCurso.Text += "CÓDIGO DE ALUMNO: " & alumno.P_cod_alumno & vbNewLine
-                        rtxtbox_NotasCurso.Text += "CÓDIGO DE CURSO: " & codCurso & vbNewLine
+        If codCurso <> "" Then
 
-                        modulos_ciclo(alumno.P_cod_curso)
+            For Each alumno In coleccionAluNotas
+                If alumno.P_cod_curso.Equals(codCurso) Then
+                    encontrado = True
+                    rtxtbox_NotasCurso.Text += "CÓDIGO DE ALUMNO: " & alumno.P_cod_alumno & vbNewLine
+                    rtxtbox_NotasCurso.Text += "CÓDIGO DE CURSO: " & codCurso & vbNewLine
 
-                        For i = 0 To 3
-                            rtxtbox_NotasCurso.Text += "           " & arrayModulos(i) & "                         " & alumno.P_Array_nota(i) & "                       " & alumno.P_Array_recu(i) & vbNewLine
-                        Next
-                        rtxtbox_NotasCurso.Text += "NOTA MEDIA:            " & calMedia(alumno.P_Array_nota) & "                " & calMedia(alumno.P_Array_recu) & vbNewLine
-                    End If
+                    modulos_ciclo(alumno.P_cod_curso)
 
-                Next
+                    For i = 0 To 3
+                        rtxtbox_NotasCurso.Text += "           " & arrayModulos(i) & "                         " & alumno.P_Array_nota(i) & "                       " & alumno.P_Array_recu(i) & vbNewLine
+                    Next
+                    rtxtbox_NotasCurso.Text += "NOTA MEDIA:            " & calMedia(alumno.P_Array_nota) & "                " & calMedia(alumno.P_Array_recu) & vbNewLine
+                End If
+            Next
 
-            Else
-                MsgBox("Seleccione en combobox")
-
-            End If
-
+        Else
+            MsgBox("Seleccione curso en combobox")
         End If
 
         If Not encontrado Then
@@ -39,7 +35,10 @@
 
     End Sub
 
-    Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        Me.Hide()
+        Form1.Show()
 
     End Sub
 End Class
