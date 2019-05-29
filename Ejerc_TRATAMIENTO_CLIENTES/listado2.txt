@@ -1,0 +1,38 @@
+ Private Sub ListadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoToolStripMenuItem.Click
+
+        Dim opcion = InputBox("Introduzca el nombre del Tratamiento")
+        Dim encontrado As Boolean = False
+        'rtxtb_listado.Text = ""
+
+        If opcion <> "" Then
+            For i = 1 To array_tratamiento.Length - 1
+                If array_tratamiento(i).nombreTra = opcion Then
+                    For Each cliente In colecClientes
+                        For j = 0 To cliente.P_HistoriaCli.Length - 1
+                            If cliente.P_HistoriaCli(j) = array_tratamiento(i).codigoTra Then
+                                If array_tratamiento(i).nombreTra = opcion Then
+                                    encontrado = True
+                                    gbx_ListadoCli.Visible = True
+                                    rtxtb_listado.Visible = True
+                                    rtxtb_listado.Text += opcion & " (" & array_tratamiento(i).codigoTra & ")" & ":" & vbNewLine
+                                    rtxtb_listado.Text += cliente.P_CodigoCli & "           " & cliente.P_NombreCli & vbNewLine
+                                End If
+                            End If
+                        Next
+                    Next
+                End If
+            Next
+        Else
+            MsgBox("Antes introduzca nombre del Tratamiento a buscar")
+        End If
+
+        If Not encontrado Then
+            MsgBox("No hay clientes con ese Tratamiento")
+            btnSalirListado.PerformClick()
+
+        End If
+
+
+    End Sub
+
+

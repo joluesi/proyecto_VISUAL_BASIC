@@ -4,7 +4,12 @@
     Private historiaCli() As Integer
     Private telefonoCli As Double
 
-    Public Sub New(codigo As String, nombre As String, telefono As Integer)
+    Public Sub New(codigocli As String, historial() As Integer)
+        Me.codigoCli = codigocli
+        Me.historiaCli = historial
+    End Sub
+
+    Public Sub New(codigo As String, nombre As String, telefono As Double)
         Me.codigoCli = codigo
         Me.nombreCli = nombre
         Me.telefonoCli = telefono

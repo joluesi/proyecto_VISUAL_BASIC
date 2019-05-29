@@ -36,7 +36,6 @@
             Else
                 MsgBox("No existe ese cliente")
             End If
-
         Next
 
     End Sub
@@ -60,18 +59,34 @@
         'ventas totales de cada uno de los vendedores, 1 por linea y en la última linea el total ventas de todos los vendedores
         Form3.Visible = True
 
+        'Dim totalVentasVendedor = 0
+        'Dim totalVentasConjuntas = 0
+
+        'For Each cliente In colecComprasCliente
+        '    For Each vendedor In colecVendedor
+        '        If cliente.PcodVendedorCli() = vendedor.Pcod_vendedor() Then
+        '            totalVentasVendedor = 0
+        '            totalVentasVendedor += cliente.Pcompras_mes()
+        '            Form3.rtbVentas.Text += "Vendedor " & vendedor.Pcod_vendedor() & " tiene unas ventas de " & totalVentasVendedor & " €" & vbNewLine
+        '            totalVentasConjuntas += totalVentasVendedor
+        '        End If
+        '    Next
+        'Next
+        'Form3.rtbVentas.Text += "Total Ventas conjuntas " & totalVentasConjuntas & " €"
+
+
+        'otra forma para obtener lo mismo
         Dim totalVentasVendedor = 0
         Dim totalVentasConjuntas = 0
 
         For Each cliente In colecComprasCliente
-            For Each vendedor In colecVendedor
-                If cliente.PcodVendedorCli() = vendedor.Pcod_vendedor() Then
-                    totalVentasVendedor = 0
-                    totalVentasVendedor += cliente.Pcompras_mes()
-                    Form3.rtbVentas.Text += "Vendedor " & vendedor.Pcod_vendedor() & " tiene unas ventas de " & totalVentasVendedor & " €" & vbNewLine
-                    totalVentasConjuntas += totalVentasVendedor
-                End If
-            Next
+            totalVentasVendedor = 0
+            totalVentasVendedor += cliente.Pcompras_mes()
+            If colecVendedor.Contains(cliente.PcodVendedorCli()) Then
+                Form3.rtbVentas.Text += "Vendedor " & cliente.PcodVendedorCli() & " tiene unas ventas de " & totalVentasVendedor & " €" & vbNewLine
+                totalVentasConjuntas += totalVentasVendedor
+            End If
+
         Next
         Form3.rtbVentas.Text += "Total Ventas conjuntas " & totalVentasConjuntas & " €"
 
@@ -145,7 +160,7 @@
             End If
         Next
 
-        MsgBox("El vendedor " & cmbVend.Text & " ha vendido por valor de: " & totalVentas & " con comisión de " & comision & " y ha obtenido un total x comisiones de " & comisionesTotal)
+        MsgBox("El vendedor " & cmbVend.Text & " ha vendido por valor de: " & totalVentas & " con comisión de " & comision & " %, y ha obtenido un total x comisiones de " & comisionesTotal)
 
     End Sub
 

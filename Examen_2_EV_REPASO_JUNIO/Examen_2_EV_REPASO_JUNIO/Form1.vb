@@ -6,7 +6,7 @@ Public Class Form1
         'añado 5 productos a la colección de Productos
         colecPRODUCTOS.Add(New PRODUCTOS("1", "monitor", 120, 10), "1")
         colecPRODUCTOS.Add(New PRODUCTOS("2", "teclado", 20, 15), "2")
-        colecPRODUCTOS.Add(New PRODUCTOS("3", "torre", 520, 12), "3")
+        colecPRODUCTOS.Add(New PRODUCTOS("3", "torre", 600, 12), "3")
         colecPRODUCTOS.Add(New PRODUCTOS("4", "altavoces", 60, 8), "4")
         colecPRODUCTOS.Add(New PRODUCTOS("5", "ratón", 10, 25), "5")
 

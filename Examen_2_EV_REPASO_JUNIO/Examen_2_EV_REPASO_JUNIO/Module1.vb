@@ -1,5 +1,4 @@
-﻿
-Module Module1
+﻿Module Module1
 
     'colección para clase PRODUCTOS
     Public colecPRODUCTOS As New Collection

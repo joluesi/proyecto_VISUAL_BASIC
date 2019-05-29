@@ -38,7 +38,7 @@
 
     Private Sub TratamientoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TratamientoToolStripMenuItem.Click
         'Actualizar campo compras_mes de colecComprasCliente con array ComprasMes
-        For i = 0 To comprasMes.GetLength(0) - 1  'Array Bidimensional. con GetLength(0) le digo que sólo me coja una dimensión (columna 0: códigos de clientes)
+        For i = 0 To comprasMes.GetLength(0) - 1  'Array Bidimensional. con GetLength(0) le digo que sólo me coja una dimensión (las filas)
             If colecComprasCliente.Contains(comprasMes(i, 0)) Then
                 Dim codCliente = comprasMes(i, 0)  'codCliente es una variable auxiliar prescindible
                 colecComprasCliente(codCliente).Pcompras_mes() += comprasMes(i, 1)

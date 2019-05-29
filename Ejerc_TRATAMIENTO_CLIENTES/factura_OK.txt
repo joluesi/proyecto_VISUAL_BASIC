@@ -1,0 +1,44 @@
+Private Sub FacturaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem.Click
+
+        Dim opcion = InputBox("Introduzca el código del cliente")
+        Dim encontrado As Boolean = False
+        rtxtb_factura.Clear()
+        cmbTratamientos.Items.Clear()
+        cmbTratamientos.Text = ""
+        precioAcumula = 0
+
+        If opcion <> "" Then
+            For Each cliente In colecClientes
+                If cliente.P_CodigoCli = opcion Then
+                    gbx_Factura.Visible = True
+                    rtxtb_factura.Visible = True
+                    comboTratamientos(array_tratamiento)
+                    encontrado = True
+                    rtxtb_factura.Text += "NOMBRE DEL CLIENTE: " & colecClientes(opcion).P_NombreCli & "        CÓDIGO CLIENTE: " & colecClientes(opcion).P_CodigoCli & vbNewLine
+                End If
+            Next
+        Else
+            MsgBox("Antes introduzca código del cliente a buscar")
+        End If
+
+        If Not encontrado Then
+            MsgBox("No existe ese cliente")
+            cmbTratamientos.Text = ""
+            btnSalirFactura.PerformClick()
+
+        End If
+
+    End Sub
+
+    Private Sub btnAnadir_Click(sender As Object, e As EventArgs) Handles btnAnadir.Click
+
+        For i = 1 To array_tratamiento.Length - 1
+            If cmbTratamientos.Text = array_tratamiento(i).nombreTra Then
+                rtxtb_factura.Text += array_tratamiento(i).nombreTra & "                " & array_tratamiento(i).precioTra & vbNewLine
+                precioAcumula += array_tratamiento(i).precioTra
+            End If
+
+        Next
+        rtxtb_factura.Text += "                         " & "Total: " & precioAcumula & vbNewLine
+
+    End Sub

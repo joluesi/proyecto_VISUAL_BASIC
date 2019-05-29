@@ -171,7 +171,6 @@ Partial Class Form1
         'cobCodVendedor
         '
         Me.cobCodVendedor.FormattingEnabled = True
-        Me.cobCodVendedor.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.cobCodVendedor.Location = New System.Drawing.Point(99, 45)
         Me.cobCodVendedor.Name = "cobCodVendedor"
         Me.cobCodVendedor.Size = New System.Drawing.Size(100, 21)

@@ -12,24 +12,17 @@
     Public cont_cliente As Integer = 1
 
 
-
-
-
     'Definir función para crear lista de vendedores en Combobox
     Public Function comboVendedores(combo As ComboBox) As ComboBox
 
         combo.Items.Clear()
         For Each vende In colecVendedor
             combo.Items.Add(vende.Pcod_vendedor())
-
         Next
+
         Return combo
 
-
     End Function
-
-
-
 
 
     'Procedimiento para solicitar si se dan de alta más vendedores
@@ -66,9 +59,6 @@
             Form1.Show()
         End If
     End Sub
-
-
-
 
 
 End Module
