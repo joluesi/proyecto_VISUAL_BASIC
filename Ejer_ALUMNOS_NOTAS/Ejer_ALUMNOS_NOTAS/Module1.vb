@@ -2,21 +2,20 @@
 
     'colecciones de las clases
     Public coleccionALUMNOS As New Collection
-    'Public coleccionNOTAS As New Collection
     Public coleccionAluNotas As New Collection
 
     'array de módulos(4 módulos x curso, máximo 5)
-    Public arrayModulos(3) As String
+    Public arrayModulos(3) As String 'array de 4 posiciones(4 módulos)
 
     Public cont As Integer = 0
 
     'función para cargar array de módulos
-    Public Function modulos_ciclo(curso As String) As String
-        If curso = "1DAM" Or curso = "1DAW" Then
+    Public Function modulos_ciclo(cursoCiclo As String) As String
+        If cursoCiclo = "1DAM" Or cursoCiclo = "1DAW" Then
             arrayModulos = {"java", "bbdd", "entornos", "sistemas"}
-        ElseIf curso = "2DAM" Then
+        ElseIf cursoCiclo = "2DAM" Then
             arrayModulos = {"python", "visualbasic", "xml", "procesos"}
-        ElseIf curso = "2DAW" Then
+        ElseIf cursoCiclo = "2DAW" Then
             arrayModulos = {"prog.servidor", "prog.cliente", "javascript", "php"}
         Else
             MsgBox("Error.Introduzca 1DAM/1DAW/2DAM/2DAW")

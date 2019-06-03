@@ -5,12 +5,19 @@
         Dim precioTra As Single
     End Structure
 
+    'variables auxiliares
     Public precioAcumula = 0
     Public precioTotalTrat = 0
 
     'variable de estructura de 5 tratamiento
-    Public array_tratamiento(5) As TRATAMIENTO 'array con 6 elementos
-    'NOTA.- array_tratamiento(5) --> Son 5 tratamientos porque comienzo en el alta automática del form1 por i=1
+    Public array_tratamiento(4) As TRATAMIENTO 'array con 5 elementos
+
+    'variable para recuperar el código de cliente
+    Public codigoOpcion As String
+
+    'array auxiliar para almacenar los códigos de tratamientos (y posteriormente pasarlo al histórico de cliente)
+    Public mi_arrayTrat As Integer()
+
 
     'colección de Clientes
     Public colecClientes As New Collection
@@ -37,18 +44,13 @@
 
 
     'función para crear combobox de tratamientos
-
     Public Function comboTratamientos(arrayTrat As Array) As ComboBox
-        For i = 1 To array_tratamiento.Length - 1
+        For i = 0 To array_tratamiento.Length - 1
             Form1.cmbTratamientos.Items.Add(array_tratamiento(i).nombreTra)
         Next
 
         Return Form1.cmbTratamientos
 
     End Function
-
-
-
-
 
 End Module

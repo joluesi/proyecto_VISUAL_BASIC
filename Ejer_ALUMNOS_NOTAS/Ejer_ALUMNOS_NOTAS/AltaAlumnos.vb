@@ -2,7 +2,6 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
 
         Try
-
             If Me.ValidateChildren And txtCodCiclo.Text <> "" And txtCodAlumno.Text <> "" And txtNombreAlumno.Text <> "" And txtDirecAlumno.Text <> "" And txtTelfnoAlumno.Text <> "" And txtEmailAlumno.Text <> "" Then
                 If txtCodCiclo.Text = "DAM" Or txtCodCiclo.Text = "DAW" Then
                     If coleccionALUMNOS.Contains(txtCodAlumno.Text) Then

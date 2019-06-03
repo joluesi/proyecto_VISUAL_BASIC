@@ -42,6 +42,8 @@
 
             NotasAlumno.rtxtbox_NotasAlumno.Text = "CURSO: " & coleccionAluNotas(opcion).P_cod_curso & "     CICLO: " & coleccionALUMNOS(opcion).P_cod_ciclo & "   CÓDIGO ALUMNO: " & opcion & "      NOMBRE: " & coleccionALUMNOS(opcion).P_nom_alum & vbNewLine
             NotasAlumno.rtxtbox_NotasAlumno.Text += "   MODULO " & "               NOTA " & "                RECUPERACIÓN " & vbNewLine
+
+            'opción sin utilizar la función mostrarNotas()
             'modulos_ciclo(coleccionAluNotas(opcion).P_cod_curso)
 
             'For i = 0 To 3

@@ -21,6 +21,7 @@
                         rtxtbox_NotasCurso.Text += "           " & arrayModulos(i) & "                         " & alumno.P_Array_nota(i) & "                       " & alumno.P_Array_recu(i) & vbNewLine
                     Next
                     rtxtbox_NotasCurso.Text += "NOTA MEDIA:            " & calMedia(alumno.P_Array_nota) & "                " & calMedia(alumno.P_Array_recu) & vbNewLine
+
                 End If
             Next
 

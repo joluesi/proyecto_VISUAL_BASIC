@@ -40,10 +40,10 @@
 
     Private Sub TratamientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TratamientosToolStripMenuItem.Click
 
-        For i As Integer = 1 To array_tratamiento.Length - 1 ' de 1 a (6-1)
-            array_tratamiento(i).codigoTra = i
-            array_tratamiento(i).nombreTra = "T" & CStr(i)
-            array_tratamiento(i).precioTra = i * 10
+        For i As Integer = 0 To array_tratamiento.Length - 1 ' de 0 a (5-1)
+            array_tratamiento(i).codigoTra = i + 1
+            array_tratamiento(i).nombreTra = "T" & CStr(i + 1)
+            array_tratamiento(i).precioTra = (i + 1) * 10
         Next
 
         MsgBox("Creado 5 Tratamientos")
@@ -85,23 +85,28 @@
         Dim opcion = InputBox("Introduzca el código del Tratamiento")
         Dim encontrado As Boolean = False
 
-        If opcion <> "" Then
-            For i = 1 To array_tratamiento.Length - 1
-                If array_tratamiento(i).codigoTra = opcion Then
-                    gbx_cons_Trat.Visible = True
-                    encontrado = True
-                    txtConsTratCodigo.Text = opcion
-                    txtConsTratNombre.Text = array_tratamiento(i).nombreTra
-                    txtConsTratPrecio.Text = array_tratamiento(i).precioTra
-                End If
-            Next
-        Else
-            MsgBox("Antes introduzca el código del Tratamiento a buscar")
-        End If
+        Try
+            If opcion <> "" Then
+                For i = 0 To array_tratamiento.Length - 1
+                    If array_tratamiento(i).codigoTra = opcion Then
+                        gbx_cons_Trat.Visible = True
+                        encontrado = True
+                        txtConsTratCodigo.Text = opcion
+                        txtConsTratNombre.Text = array_tratamiento(i).nombreTra
+                        txtConsTratPrecio.Text = array_tratamiento(i).precioTra
+                    End If
+                Next
+            Else
+                MsgBox("Antes introduzca el código del Tratamiento a buscar")
+            End If
 
-        If Not encontrado Then
-            MsgBox("No existe ese tratamiento")
-        End If
+            If Not encontrado Then
+                MsgBox("No existe ese tratamiento")
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
     End Sub
 
@@ -110,7 +115,7 @@
 
     End Sub
 
-    Public codigoOpcion As String
+
 
     Private Sub FacturaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem.Click
 
@@ -151,23 +156,28 @@
 
     Private Sub btnAnadir_Click(sender As Object, e As EventArgs) Handles btnAnadir.Click
 
-        For i = 1 To array_tratamiento.Length - 1
-            If cmbTratamientos.Text = array_tratamiento(i).nombreTra Then
-                rtxtb_factura.Text += array_tratamiento(i).nombreTra & "                " & array_tratamiento(i).precioTra & vbNewLine
-                precioAcumula += array_tratamiento(i).precioTra
+        Dim codTrat As Integer = 0
+        Dim nomTrat As String = ""
 
-                'hago uso de la variable pública 'codigoOpcion' para acceder al código de cliente del pto. 5. Factura
-                'A ese cliente, le añado en su historial, el/los código/s de el/los tratamiento/s que ha contratado (que se le han facturado)
+        For Each cliente In colecClientes
+            If cliente.P_CodigoCli = codigoOpcion Then
+                For i = 0 To array_tratamiento.Length - 1
+                    If cmbTratamientos.Text = array_tratamiento(i).nombreTra Then
+                        codTrat = array_tratamiento(i).codigoTra
+                        nomTrat = array_tratamiento(i).nombreTra
+                        rtxtb_factura.Text += array_tratamiento(i).nombreTra & "                " & array_tratamiento(i).precioTra & vbNewLine
+                        precioAcumula += array_tratamiento(i).precioTra
 
-                'colecClientes(codigoOpcion).P_HistoriaCli = array_tratamiento(i).codigoTra
+                        ReDim Preserve mi_arrayTrat(i)
+                        mi_arrayTrat(i) = codTrat
+                    End If
+                Next
+                colecClientes(codigoOpcion).P_HistoriaCli = mi_arrayTrat
+                MsgBox("Añadido tratamiento " & nomTrat & " al historial del cliente " & codigoOpcion)
 
-                If colecClientes.Contains(codigoOpcion) Then
-                    colecClientes.Add(New Class_CLIENTE(codigoOpcion, historial:={array_tratamiento(i).codigoTra}))
-                    MsgBox("Añadido tratamiento " & array_tratamiento(i).nombreTra & " al historial del cliente " & colecClientes(codigoOpcion).P_NombreCli)
-                End If
             End If
-
         Next
+
         rtxtb_factura.Text += "                         " & "Total: " & precioAcumula & vbNewLine
 
     End Sub
@@ -182,33 +192,35 @@
     Private Sub ListadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoToolStripMenuItem.Click
 
         Dim opcion = InputBox("Introduzca el nombre del Tratamiento")
-        Dim encontrado As Boolean = False
+        Dim encontradoTrat As Boolean = False
+        Dim codTrat As Integer
         rtxtb_listado.Clear()
 
         If opcion <> "" Then
-
-            For i = 1 To array_tratamiento.Length - 1
+            For i = 0 To array_tratamiento.Length - 1
                 If array_tratamiento(i).nombreTra = opcion Then
-                    For Each cliente In colecClientes
-                        For j = 0 To cliente.P_HistoriaCli.Length - 1
-                            If cliente.P_HistoriaCli(j) = array_tratamiento(i).codigoTra Then
-                                encontrado = True
-                                gbx_ListadoCli.Visible = True
-                                rtxtb_listado.Visible = True
-                                rtxtb_listado.Text += opcion & " (" & array_tratamiento(i).codigoTra & ")" & ":" & vbNewLine
-                                rtxtb_listado.Text += colecClientes(cliente.P_HistoriaCli(j)).P_CodigoCli & "           " & colecClientes(cliente.P_HistoriaCli(j)).P_NombreCli & vbNewLine
-                                rtxtb_listado.Text += colecClientes(codigoOpcion).P_CodigoCli & "           " & colecClientes(codigoOpcion).P_NombreCli & vbNewLine
-                            End If
-                        Next
-                    Next
+                    codTrat = array_tratamiento(i).codigoTra
+                    encontradoTrat = True
                 End If
             Next
         Else
             MsgBox("Antes introduzca nombre del Tratamiento a buscar")
         End If
 
+        If encontradoTrat Then
+            For Each cliente In colecClientes
+                For j = 0 To cliente.P_HistoriaCli.Length - 1
+                    If cliente.P_HistoriaCli(j) = codTrat Then
+                        gbx_ListadoCli.Visible = True
+                        rtxtb_listado.Visible = True
+                        rtxtb_listado.Text += opcion & " (" & codTrat & ")" & ":" & vbNewLine
+                        rtxtb_listado.Text += cliente.P_CodigoCli & "           " & cliente.P_NombreCli & vbNewLine
 
-        If Not encontrado Then
+                    End If
+                Next
+            Next
+
+        Else
             MsgBox("No hay clientes con ese Tratamiento")
             rtxtb_listado.Clear()
             gbx_ListadoCli.Visible = False
@@ -219,6 +231,11 @@
     Private Sub btnSalirListado_Click(sender As Object, e As EventArgs) Handles btnSalirListado.Click
         gbx_ListadoCli.Hide()
         rtxtb_listado.Clear()
+
+    End Sub
+
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Me.Close()
 
     End Sub
 End Class
