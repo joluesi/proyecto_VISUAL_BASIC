@@ -18,6 +18,9 @@
     'array auxiliar para almacenar los códigos de tratamientos (y posteriormente pasarlo al histórico de cliente)
     Public mi_arrayTrat As Integer()
 
+    'variable contador
+    Public cont As Integer = 0
+
 
     'colección de Clientes
     Public colecClientes As New Collection

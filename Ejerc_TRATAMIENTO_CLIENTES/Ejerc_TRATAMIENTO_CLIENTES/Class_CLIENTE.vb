@@ -48,4 +48,9 @@
         End Set
     End Property
 
+    Public Sub redimensionar()
+        ReDim Preserve P_HistoriaCli(P_HistoriaCli.Length)
+
+    End Sub
+
 End Class

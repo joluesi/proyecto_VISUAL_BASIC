@@ -156,6 +156,7 @@
 
     Private Sub btnAnadir_Click(sender As Object, e As EventArgs) Handles btnAnadir.Click
 
+        Dim cont As Integer = 0
         Dim codTrat As Integer = 0
         Dim nomTrat As String = ""
 
@@ -168,12 +169,23 @@
                         rtxtb_factura.Text += array_tratamiento(i).nombreTra & "                " & array_tratamiento(i).precioTra & vbNewLine
                         precioAcumula += array_tratamiento(i).precioTra
 
-                        ReDim Preserve mi_arrayTrat(i)
-                        mi_arrayTrat(i) = codTrat
+
+                        ReDim Preserve mi_arrayTrat(cont)
+                        mi_arrayTrat(cont) = codTrat
+                        cont += 1
                     End If
                 Next
-                colecClientes(codigoOpcion).P_HistoriaCli = mi_arrayTrat
-                MsgBox("Añadido tratamiento " & nomTrat & " al historial del cliente " & codigoOpcion)
+
+                Dim longitud As Integer = colecClientes(codigoOpcion).P_HistoriaCli.length
+
+
+                For j = 0 To mi_arrayTrat.Length - 1
+                    'ReDim Preserve colecClientes(codigoOpcion).P_HistoriaCli(longitud)
+                    cliente.redimensionar()
+                    colecClientes(codigoOpcion).P_HistoriaCli(longitud + j) = mi_arrayTrat(j)
+                    MsgBox("Añadido tratamiento " & nomTrat & " al historial del cliente " & codigoOpcion)
+
+                Next
 
             End If
         Next
